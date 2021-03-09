@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="windows-1252">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div>
+            
+            <p><strong>Instalação BOWER</strong></p>
+            
+            <p>
+                Antes de mais nada você precisa realizar a instalação do Node que instalará também o NPM em sua máquina.<br />
+                Caso não tenha instalado ainda, basta acessar o <a href="http://nodejs.org">nodejs.org</a>, fazer download e instalar. Suave!
+            </p>
+            <p>Após a instalação, vamos para o terminal/cmd e instalar o bower com o seguinte comando:</p>
+            <p># <i>npm install -g bower</i></p>
+            <p>
+                O NPM  é um gerenciador de pacotes de programas que rodam com o Node, com o comando acima estamos realizando a instalar o bower no nosso computador. <br />
+                A opção -g que está dizendo para o npm instalar o bower globalmente em nossa máquina definindo todas as variáveis de ambiente para utilizar em todos os projetos.
+            </p>
+            
+            <p><strong>Dicas:</strong></p>
+            <p>
+                Iniciar Bower para gerar o arquivo “bower.json”: <br />
+                # <i>bower init</i>
+            </p>
+            <p>No nosso caso este arquivo já esta criado na raiz da conta (/home/base/public_html/</p>
+            <p>
+                Instalar dependencias do projeto definidas no arquivo “bower.json”: <br />
+                # <i>bower install</i>
+            </p>
+            <p>
+                Pesquisas bibliotecas: <br />
+                # <i>bower search</i> bootstrap
+            </p>
+
+            <p><strong>Instalação GRUNT</strong></p>
+            <p># <i>npm install -g grunt-cli</i></p>
+            
+            
+            <p><strong>Instalação dos plug-ins necessários do Grunt</strong></p>
+            
+            <p># <i>npm install grunt-contrib-uglify --save-dev</i></p>
+            <p># <i>npm install grunt-contrib-concat --save-dev</i></p>
+            <p># <i>npm install grunt-contrib-cssmin --save-dev</i></p>
+            <p>Será criado uma pasta <strong>node_modules</strong> na raiz do projeto onde foram instalados os plugins do Grunt.</p>
+            
+            <p><strong>Para projetos com os arquivos "package.json" e "Gruntfile.js" já criados e com todos os passos acima já realizados em outros projetos, basta digitar o comando:</strong></p>
+            <p># <i>npm install</i></p>
+            
+            <p><strong>Baixando o SB Admin do repostório</strong></p>
+            <p># <i>git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git</i></p>
+            <p>Executando o comando acima será baixado a última versão do SB Admin em uma pasta chamada <strong>startbootstrap-sb-admin-2</strong> na raiz da conta (fora do public_html).</p>
+        </div>
+    </body>
+</html>

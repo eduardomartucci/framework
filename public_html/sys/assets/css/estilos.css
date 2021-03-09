@@ -1,0 +1,24 @@
+body{
+    padding-top: 30px;
+}
+a.gerenciar{
+    color:green !important;
+}
+
+a.gerenciar:hover{
+    color:#004A00 !important;
+}
+
+a.apagar{
+    color:red !important;
+}
+
+a.apagar:hover{
+    color:#7B0000 !important;
+}
+
+label span {
+    color: red;
+    font-size: 18px;
+    padding: 0 4px;
+}

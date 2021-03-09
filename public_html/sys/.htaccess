@@ -1,0 +1,35 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^base\.orbitive\.com\.br$ [NC]
+RewriteRule ^(.*)$ http://base.orbitive.com.br/sys/$1 [R=301,L]
+
+#RewriteCond %{HTTP_HOST} !^base\.orbitive\.com\.br/sys$ [NC]
+#RewriteRule ^(.*)$ http://base.orbitive.com.br\/sys\/$1 [R=301,L]
+
+IndexIgnore *
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+# /sys
+RewriteRule ^login$ index.php
+RewriteRule ^home$ home.php
+RewriteRule ^logout$ logout.php
+
+#Usuario
+RewriteRule ^ctrl/usuario/request$ ctrl/UsuarioRequest.php
+RewriteRule ^ctrl/usuario/login ctrl/UsuarioRequestLogin.php
+RewriteRule ^usuario\/listar$ usuario_listar.php
+RewriteRule ^usuario\/adicionar$ usuario_adicionar.php
+RewriteRule ^usuario\/editar\/(.*)$ usuario_editar.php?id=$1
+RewriteRule ^usuario\/remover\/(.*)$ usuario_listar.php?id=$1
+RewriteRule ^recuperar-senha$ usuario_nova_senha.php
+
+
+#REQUEST
+RewriteRule ^ctrl/cliente/request$ ctrl/ClienteRequest.php
+
+
+
+
